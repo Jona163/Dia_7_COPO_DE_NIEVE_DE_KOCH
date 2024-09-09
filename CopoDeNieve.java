@@ -56,3 +56,6 @@ public class CopoDeNieve extends JPanel {
        // Calcular el vértice del triángulo equilátero
             double xx = (x1 + x2) / 2 - (dy * sin60);
             double yy = (y1 + y2) / 2 + (dx * sin60);
+          // Llamadas recursivas para cada uno de los 4 nuevos segmentos
+            paintKoch(g, nivel - 1, xp1, yp1, x1, y1);
+            paintKoch(g, nivel - 1, x1, y1, xx, yy);
