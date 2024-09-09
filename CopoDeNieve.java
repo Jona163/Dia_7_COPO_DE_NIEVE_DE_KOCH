@@ -62,3 +62,8 @@ public class CopoDeNieve extends JPanel {
 
       paintKoch(g, nivel - 1, xx, yy, x2, y2);
             paintKoch(g, nivel - 1, x2, y2, xp2, yp2);
+
+         }
+    }
+}
+
