@@ -21,3 +21,7 @@ public class CopoDeNieve extends JPanel {
         frame.add(panel);  // Agregar el panel que dibujará el fractal
         frame.setVisible(true);  // Hacer visible la ventana
     }
+
+  @Override
+    protected void paintComponent(Graphics g) {
+        super.paintComponent(g);
