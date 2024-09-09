@@ -11,10 +11,6 @@ public class CopoDeNieve extends JPanel {
     int nivel_de_recursividad = 5;  // Nivel de profundidad para el import javax.swing.*;
 import java.awt.*;
 
-/*
- @Jony
- * Programa para generar la curva de Koch (Copo de nieve)
- */
 
 public class CopoDeNieve extends JPanel {
     double sin60 = Math.sin(Math.PI / 3.0);  // Valor de sin(60 grados)
