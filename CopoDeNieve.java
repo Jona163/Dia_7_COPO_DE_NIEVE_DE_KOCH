@@ -52,3 +52,7 @@ public class CopoDeNieve extends JPanel {
             double y1 = yp1 + dy;
             double x2 = xp1 + 2 * dx;
             double y2 = yp1 + 2 * dy;
+
+       // Calcular el vértice del triángulo equilátero
+            double xx = (x1 + x2) / 2 - (dy * sin60);
+            double yy = (y1 + y2) / 2 + (dx * sin60);
