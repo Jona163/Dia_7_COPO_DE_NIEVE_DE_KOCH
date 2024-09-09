@@ -42,3 +42,13 @@ public class CopoDeNieve extends JPanel {
             g.setColor(Color.RED);  // Establecer el color rojo para el dibujo
             // Caso base: dibujar una línea entre dos puntos
             g.drawLine((int) xp1, (int) yp1, (int) xp2, (int) yp2);
+         } else {
+            // Dividir el segmento en tres partes
+            double dx = (xp2 - xp1) / 3.0;
+            double dy = (yp2 - yp1) / 3.0;
+
+            // Puntos intermedios
+            double x1 = xp1 + dx;
+            double y1 = yp1 + dy;
+            double x2 = xp1 + 2 * dx;
+            double y2 = yp1 + 2 * dy;
