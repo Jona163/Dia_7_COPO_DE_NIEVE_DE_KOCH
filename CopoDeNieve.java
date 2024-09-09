@@ -25,3 +25,14 @@ public class CopoDeNieve extends JPanel {
   @Override
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
+
+      // Coordenadas del triángulo inicial (copo de nieve)
+        double xp1 = 400, yp1 = 100;
+        double xp2 = 200, yp2 = 500;
+        double xp3 = 600, yp3 = 500;
+
+        // Dibujar las tres aristas del triángulo inicial recursivamente
+        paintKoch(g, nivel_de_recursividad, xp1, yp1, xp2, yp2);
+        paintKoch(g, nivel_de_recursividad, xp2, yp2, xp3, yp3);
+        paintKoch(g, nivel_de_recursividad, xp3, yp3, xp1, yp1);
+    }
