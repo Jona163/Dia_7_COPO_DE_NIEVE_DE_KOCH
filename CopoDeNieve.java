@@ -36,3 +36,9 @@ public class CopoDeNieve extends JPanel {
         paintKoch(g, nivel_de_recursividad, xp2, yp2, xp3, yp3);
         paintKoch(g, nivel_de_recursividad, xp3, yp3, xp1, yp1);
     }
+  // Método recursivo para dibujar la curva de Koch
+    private void paintKoch(Graphics g, int nivel, double xp1, double yp1, double xp2, double yp2) {
+        if (nivel == 0) {
+            g.setColor(Color.RED);  // Establecer el color rojo para el dibujo
+            // Caso base: dibujar una línea entre dos puntos
+            g.drawLine((int) xp1, (int) yp1, (int) xp2, (int) yp2);
